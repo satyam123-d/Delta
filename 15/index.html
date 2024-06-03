@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+    <button onclick="colorchngred()" class="red light" id="red"></button><br><br>
+    <button onclick="colorchngyellow()" class="yellow light"></button><br><br>
+    <button onclick="colorchnggreen()" class="green light"></button><br><br>
+    <h1 class="message"></h1>
+
+    <script>
+        function colorchngred(){
+            document.querySelector(".message").style.color = "red";
+            document.querySelector(".message").innerHTML = "STOP!";
+        }
+        
+        function colorchngyellow(){
+            document.querySelector(".message").style.color = "Yellow";
+            document.querySelector(".message").innerHTML = "Ready To Go!";
+        }
+
+        function colorchnggreen(){
+            document.querySelector(".message").style.color = "green";
+            document.querySelector(".message").innerHTML = "GO &#128522;";
+        }
+    </script>
+</body>
+</html>

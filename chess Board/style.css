@@ -1,0 +1,71 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+/* .chessboard {
+    border: 2px solid #000;
+} */
+
+/* .row {
+    display: flex;
+} */
+
+/* .square {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 200%;
+    padding: 2px;
+} */
+
+/* Alternate the background color to create the chessboard pattern */
+/* .row:nth-child(even) .square:nth-child(odd),
+.row:nth-child(odd) .square:nth-child(even) {
+    background-color: #f0d9b5;
+}
+
+.row:nth-child(odd) .square:nth-child(odd),
+.row:nth-child(even) .square:nth-child(even) {
+    background-color: #b58863;
+} */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chessboard{
+    border: 2px solid black
+}
+
+.row{
+    display: flex;
+}
+
+.square{
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 200%;
+    align-content: center;
+}
+
+.row:nth-child(odd) .square:nth-child(even){
+    background-color: #f0d9b5;
+}
+
+.row:nth-child(odd) .square:nth-child(odd),
+.row:nth-child(even) .square:nth-child(even) {
+    background-color: #b58863;
+}

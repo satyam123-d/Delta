@@ -1,0 +1,21 @@
+.light{
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: red;
+    border-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+    border-color: yellow;
+}
+
+.green{
+    background-color: green;
+    border-color: green;
+}

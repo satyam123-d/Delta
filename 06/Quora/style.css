@@ -1,0 +1,32 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+h1, h3{
+    color: #b92b27;
+}
+
+#login{
+    background-color: rgb(14, 192, 252);
+    color: white;
+    font-weight: bold;
+}
+
+#singnup{
+    background-color: #b92b27;
+    color: white;
+    font-weight: bold;
+}
+
+.upvote{
+    background-color: rgb(14, 192, 252);
+}
+
+p a{
+    text-decoration: none;
+    color: purple
+}
+ 
+p a:hover{
+    color: black;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice</title>
+</head>
+<body>
+    <h1>Roll Dice</h1>
+    <h3>Dice : <span id="diceValue"><%= num %></span></h3>
+    <button id="diceRoll">Roll Dice</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#diceRoll').addEventListener('click', function (){
+            fetch('/rolldice')
+            .then(response => response.json())
+            .then((data) => {
+                document.querySelector('#diceValue').textContent = data.num;
+            }).catch((err) => {
+                console.log("Error :",err);
+            });
+        }) 
+        });
+        
+    </script>
+</body>
+</html>

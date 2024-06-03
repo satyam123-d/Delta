@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+/* .head{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+} */
+
+.generate{
+    margin-bottom: 40px;
+}
+
+.block{
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    border: 2px solid black;
+}
