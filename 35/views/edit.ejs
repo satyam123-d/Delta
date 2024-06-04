@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Chat</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+    <h1>Edit Your Chat</h1>
+    <p>This message is sent from <b><i><%= chat.from %></i></b> to <b><i><%= chat.to %></i></b></p>
+    <form method="POST" action="/chats/<%= chat._id %>?_method=PUT">
+        <textarea name="msg" rows="6" cols="50"><%= chat.msg %></textarea>
+        <br>
+        <button class="button">
+            <svg class="svg-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#a649da" stroke-linecap="round" stroke-width="2">
+                    <path d="m20 20h-16"></path>
+                    <path clip-rule="evenodd" d="m14.5858 4.41422c.781-.78105 2.0474-.78105 2.8284 0 .7811.78105.7811 2.04738 0 2.82843l-8.28322 8.28325-3.03046.202.20203-3.0304z" fill-rule="evenodd"></path>
+                </g>
+            </svg>
+            <span class="label">Edit</span>
+        </button>
+    </form>
+</body>
+</html>
