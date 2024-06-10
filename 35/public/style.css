@@ -136,7 +136,7 @@ body{
       display: flex;
         padding-right: 10px;
         font-size: 13px;
-        opacity: 1;
+        opacity: 1; 
         transform: translateY(0px);
         transition-duration: 0.3s;
     }
